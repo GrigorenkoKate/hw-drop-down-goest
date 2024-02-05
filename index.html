@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>hw-drop-down-goest</title>
+   <link rel="stylesheet" href="./src/css/style.css">
+   <link rel="stylesheet" href="./src/css/reset.css">
+</head>
+
+
+<body>
+   <div class="container">
+      <div class="dropdown">
+         <div class="dropdown__title">Количество гостей</div>
+         <div class="dropdown__box">
+            <div class="dropdown__sum">0</div>
+            <div class="dropdown__arrow">
+               <img src="./src/img/blue.png" alt="">
+            </div>
+         </div>
+
+         <div class="dropdown__content">
+            <div class=" dropdown__item">
+               <div class=" dropdown__item-title">Взрослые
+                  <div class=" dropdown__item-subtitle ">
+                  </div>
+               </div>
+
+               <div class="dropdown__item-btn">
+                  <button class="dropdown__item-btn-sm" type="button" data-minus="">-</button>
+                  <div class="dropdown__item-btn-text">0</div>
+                  <button class="dropdown__item-btn-sm" type="button" data-plus="">+</button>
+               </div>
+            </div>
+            <div class=" dropdown__item mt-16 ">
+               <div class=" dropdown__item-title">Дети
+                  <div class=" dropdown__item-subtitle ">Младше 18 лет</div>
+               </div>
+
+               <div class="dropdown__item-btn">
+                  <button class="dropdown__item-btn-sm" type="button" data-minus="">-</button>
+                  <div class="dropdown__item-btn-text">0</div>
+                  <button class="dropdown__item-btn-sm" type="button" data-plus="">+</button>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+   <script src="./src/js/app.js"></script>
+</body>
+
+</html>

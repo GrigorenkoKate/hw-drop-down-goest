@@ -1,0 +1,112 @@
+body {
+   font-family: "Open Sans", sans-serif;
+   font-family: "Roboto", sans-serif;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding-top: 20px;
+}
+
+.dropdown {
+   border-radius: 50px;
+   border: 1px solid #418ccf;
+   background: #fff;
+   width: 305px;
+   height: 45px;
+   flex-shrink: 0;
+   position: relative;
+}
+.dropdown__title {
+   position: absolute;
+   top: -8px;
+   left: 14px;
+   background-color: #fff;
+   color: #418ccf;
+   font-size: 13px;
+   font-weight: 400;
+}
+.dropdown__box {
+   padding: 12px 16px;
+   display: flex;
+   align-items: center;
+}
+
+/* Стрелка */
+.dropdown__arrow {
+   position: absolute;
+   right: 0;
+   padding: 12px;
+   transition: transform 0.3s ease;
+}
+
+.dropdown__arrow.active {
+   position: absolute;
+   right: 0;
+   padding: 12px;
+
+   transform: rotate(180deg);
+}
+/* Стрелка ends  */
+
+.dropdown__content {
+   display: none;
+}
+
+.dropdown__content.active {
+   display: block;
+   border-radius: 20px;
+   background: #fff;
+   box-shadow: 0px 4px 15px 0px rgba(0, 17, 51, 0.1);
+   height: auto;
+   padding: 24px 16px;
+}
+.dropdown__item {
+   display: flex;
+   align-items: center;
+}
+.dropdown__item-title {
+   color: #112b42;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+   flex-grow: 1;
+}
+.dropdown__item-subtitle {
+   color: #a2aab0;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 14px;
+}
+
+/* Кнопки */
+.dropdown__item-btn {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.dropdown__item-btn-sm {
+   border-radius: 50px;
+   border: 1px solid #eaebee;
+   background: #fff;
+   padding: 12px 16px;
+   width: 40px;
+}
+.dropdown__item-btn-sm:hover {
+   background-color: #eff7ffe6;
+   cursor: pointer;
+}
+/* Кнопки  ends  */
+
+.dropdown__item-btn-text {
+   color: #112b42;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.mt-16 {
+   margin-top: 16px;
+}
