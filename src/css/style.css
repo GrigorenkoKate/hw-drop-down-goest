@@ -10,13 +10,8 @@ body {
 }
 
 .dropdown {
-   border-radius: 50px;
-   border: 1px solid #418ccf;
-   background: #fff;
-   width: 305px;
-   height: 45px;
-   flex-shrink: 0;
    position: relative;
+   width: 305px;
 }
 .dropdown__title {
    position: absolute;
@@ -28,17 +23,25 @@ body {
    font-weight: 400;
 }
 .dropdown__box {
-   padding: 12px 16px;
-   display: flex;
-   align-items: center;
+   border-radius: 50px;
+   border: 1px solid #418ccf;
+   background: #fff;
+   padding: 15px 16px 14px 16px;
+   position: relative;
 }
 
 /* Стрелка */
 .dropdown__arrow {
    position: absolute;
+   top: 5px;
    right: 0;
    padding: 12px;
    transition: transform 0.3s ease;
+   font-size: 0;
+}
+
+.dropdown.active .dropdown__arrow{
+
 }
 
 .dropdown__arrow.active {
