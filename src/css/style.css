@@ -40,9 +40,7 @@ body {
    font-size: 0;
 }
 
-.dropdown.active .dropdown__arrow{
 
-}
 
 .dropdown__arrow.active {
    position: absolute;
